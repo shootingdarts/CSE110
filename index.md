@@ -1,4 +1,5 @@
-# David Liu
+# My Page
+## David Liu
 <img src="Selfie.jpg"
      alt="Selfie"
      style="height: 300;" />
@@ -18,4 +19,4 @@
    * [x] Unfinished
    * [Repository](https://github.com/shootingdarts/VampireSurvivorClone)
   
-## [Back to Top](https://github.com/shootingdarts/CSE110/blob/main/index.md#projects)
+## [Back to Top](#david-liu)

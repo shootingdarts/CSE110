@@ -18,5 +18,7 @@
    * [x] Using pygames
    * [x] Unfinished
    * [Repository](https://github.com/shootingdarts/VampireSurvivorClone)
-  
+
+## [Read Me](README.md)
+
 ## [Back to Top](#david-liu)

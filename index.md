@@ -2,7 +2,7 @@
 ## David Liu
 <img src="Selfie.jpg"
      alt="Selfie"
-     style="height: 300;" />
+     style="height: 300px;" />
 ## Background
 * Thrid year __Math-CS__ student
 * Born in _China_

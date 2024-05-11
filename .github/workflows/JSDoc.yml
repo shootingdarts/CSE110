@@ -9,12 +9,24 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Wait for test to succeed
+        uses: fountainhead/action-wait-for-check@v1.2.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          checkName: build
+          
       - name: Checkout code
         uses: actions/checkout@v2
 
-      - name: Build
+      - name: Make Docs
         uses: andstor/jsdoc-action@v1
         with:
           source_dir: ./src
           output_dir: ./out
-          front_page: README.md
+          recurse: true
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          branch: main
+          folder: ./out

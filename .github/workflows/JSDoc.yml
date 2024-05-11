@@ -8,6 +8,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
     #  - name: Wait for test to succeed
     #    uses: fountainhead/action-wait-for-check@v1.2.0
@@ -25,8 +27,7 @@ jobs:
           output_dir: ./out
           recurse: true
 
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.0.0
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: main
           folder: ./out

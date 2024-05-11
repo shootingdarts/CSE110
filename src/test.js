@@ -16,20 +16,21 @@ function foo(n, o, d) {
 }
 
 /**
- * A song
- * @typedef {{title: string, artist: string, year: number}} Song
+ * Generate a book description.
+ *
+ * @param {string} title - The title of the book.
+ * @param {string} author - The author of the book.
+ *
+ * @returns {string} Description of the book.
+ * @throws An error if values are not set.
  */
-
-/**
- * Plays a song
- * @param {Song} song - The {@link Song} to be played
- */
-
-function play(song) {}
-
-/**
- * @typedef {import('./Foo').default} Bar
- */
+function Book(title, author) {
+  if (!title || !author) {
+    throw new Error('title and author must be set');
+  }
+  
+  return `${title} by ${author}`;
+}
 
 /**
  * @param {Bar} x
